@@ -1,5 +1,4 @@
 require 'bundler/setup'
-require 'daemons'
 
 class Test
   def spawn
