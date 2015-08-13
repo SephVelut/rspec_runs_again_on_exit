@@ -6,7 +6,8 @@ describe Test do
     begin
       r = Test.new.spawn
     rescue SystemExit
-      exit!
+    # if we exit! here, rspec will not output again
+      #exit!
     end
       expect(r).to eq(true)
   end
